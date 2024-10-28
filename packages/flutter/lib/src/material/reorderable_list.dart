@@ -108,7 +108,10 @@ class ReorderableListView extends StatefulWidget {
          'All children of this widget must have a key.',
        ),
        itemBuilder = ((BuildContext context, int index) => children[index]),
-       itemCount = children.length;
+       itemCount = children.length {
+           // TODO: implement ReorderableListView
+           throw UnimplementedError();
+         }
 
   /// Creates a reorderable list from widget items that are created on demand.
   ///
